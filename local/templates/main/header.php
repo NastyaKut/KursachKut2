@@ -25,25 +25,36 @@
             </div>
             <?$APPLICATION->IncludeComponent(
                 "bitrix:menu",
+<<<<<<< HEAD
                 "",
+=======
+                "top_menu",
+>>>>>>> task_2_top_menu
                 Array(
                     "ALLOW_MULTI_SELECT" => "N",
                     "CHILD_MENU_TYPE" => "left",
                     "DELAY" => "N",
                     "MAX_LEVEL" => "2",
+<<<<<<< HEAD
                     "MENU_CACHE_GET_VARS" => array(""),
+=======
+                    "MENU_CACHE_GET_VARS" => array(0 => "",),
+>>>>>>> task_2_top_menu
                     "MENU_CACHE_TIME" => "3600",
                     "MENU_CACHE_TYPE" => "A",
                     "MENU_CACHE_USE_GROUPS" => "Y",
                     "ROOT_MENU_TYPE" => "left",
                     "USE_EXT" => "Y"
+<<<<<<< HEAD
                 )
             );?>
+=======
+                ),
+                false
+            );?>
+            <br><br><br><br><br><br><br><br><br>
+>>>>>>> task_2_top_menu
             <div class="clr"></div>
-            <div class="slider">
-                <div id="coin-slider"><a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/slide1.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/slide2.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/slide3.jpg" width="935" height="307" alt="" /></a></div>
-                <div class="clr"></div>
-            </div>
             <div class="clr"></div>
         </div>
     </div>
