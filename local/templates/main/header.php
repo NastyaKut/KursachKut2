@@ -23,20 +23,25 @@
             <div class="logo">
                 <h1><a href="index.html">ГринАвокадо</a> <small>Магазин правильного питания</small></h1>
             </div>
-            <div class="menu_nav">
-                <ul>
-                    <li class="active"><a href="index.html"><span>Главная страница</span></a></li>
-                    <li><a href="support.html"><span>О нас</span></a></li>
-                    <li><a href="about.html"><span>Новости</span></a></li>
-                    <li><a href="blog.html"><span>Форум</span></a></li>
-                    <li><a href="contact.html"><span>Контакты</span></a></li>
-                </ul>
-            </div>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "top_menu",
+                Array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "left",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "2",
+                    "MENU_CACHE_GET_VARS" => array(0 => "",),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "A",
+                    "MENU_CACHE_USE_GROUPS" => "Y",
+                    "ROOT_MENU_TYPE" => "left",
+                    "USE_EXT" => "Y"
+                ),
+                false
+            );?>
+            <br><br><br><br><br><br><br><br><br>
             <div class="clr"></div>
-            <div class="slider">
-                <div id="coin-slider"><a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/slide1.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/slide2.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/slide3.jpg" width="935" height="307" alt="" /></a></div>
-                <div class="clr"></div>
-            </div>
             <div class="clr"></div>
         </div>
     </div>
