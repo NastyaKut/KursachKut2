@@ -44,7 +44,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"ГринАвокадо
 			1 => "",
 		),
 		"ELEMENT_SORT_FIELD" => "sort",
-		"ELEMENT_SORT_ORDER" => "desc",
+		"ELEMENT_SORT_ORDER" => "asc",
 		"ELEMENT_SORT_FIELD2" => "id",
 		"ELEMENT_SORT_ORDER2" => "desc",
 		"FILTER_NAME" => "arrFilter",
